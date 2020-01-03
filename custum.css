@@ -1,0 +1,47 @@
+/*work section style*/
+.work-card {
+    height: 200px;
+    width: 250px;
+    margin: auto;
+}
+
+.work-card > div:nth-child(1) {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
+    -moz-box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
+    box-shadow: 0px 20px 37px -15px rgba(94, 90, 94, 0.74);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+}
+
+.work-card-overlay {
+    background-color: rgba(82, 170, 94, 0.75);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.work-card > div {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.work-card > div:nth-child(1):hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 20px 37px -20px rgba(94, 90, 94, 0.74);
+    z-index: -100;
+}
+
+.work-card > div:nth-child(2):hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 20px 37px -20px rgba(94, 90, 94, 0.74);
+    z-index: 100;
+}
