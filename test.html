@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+                class park {
+                    constructor(name, buildYear, area, numberOfTrees) {
+                        this.name = name;
+                        this.buildYear = buildYear;
+                        this.area = area;
+                        this.numberOfTrees = numberOfTrees;
+                    }
+                    density = 0;
+                    density = this.numberOfTrees / this.area;
+                    calculateAge() {
+                        var parkAge = 2019 - this.buildYear;
+                        return parkAge;
+                    }
+                }
+                var parks = new park("nancy",1991,2000,50);
+        
+                //        Parks Value
+//                var parks = [new park('Blue park', 1897, 6000, 2000), new park('Green park', 1890, 1000, 1000), new park('Pink park', 1895, 5000, 5000)];
+                console.log(parks.numberOfTrees/parks.area);
+                console.log(parks.density);
+               
+    </script>
+</body></html>
